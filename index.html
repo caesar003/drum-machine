@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Drum Machine</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main id="drum-machine">
+            <div id="drum-pads">
+                <button class="drum-pad">Q</button>
+                <button class="drum-pad">W</button>
+                <button class="drum-pad">E</button>
+                <button class="drum-pad">A</button>
+                <button class="drum-pad">S</button>
+                <button class="drum-pad">D</button>
+                <button class="drum-pad">Z</button>
+                <button class="drum-pad">X</button>
+                <button class="drum-pad">C</button>
+                <div class="audios"></div>
+            </div>
+            <div id="config">
+                <div class="button-toggle-container">
+                    <input type="checkbox" class="toggle" id="power" checked />
+                    <label for="power" class="label">
+                        <div class="ball"></div>
+                    </label>
+                    <span>Power</span>
+                </div>
+                <div id="display">Open HH</div>
+                <input
+                    type="range"
+                    id="audio-volume"
+                    min="0"
+                    max="10"
+                    value="4"
+                />
+                <div class="button-toggle-container">
+                    <input type="checkbox" id="bank" class="toggle" />
+                    <label for="bank" class="label">
+                        <div class="ball"></div>
+                    </label>
+                    <span>Bank</span>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
